@@ -877,7 +877,7 @@ ul.top-info-box > li.nav-search i {
   padding: 6px;
   border-radius: 0;
   font-size: 1rem;
-  background: #;
+  background: #ff7f27;
 }
 
 .navbar-toggler:focus {
@@ -3502,9 +3502,9 @@ label {
 
 /* CUSTOM STYLE */
 .header-get-a-quote .btn-primary:hover {
-    background: #052894;!important
+    background: #052894 !important;
 }
 
 .btn-dark {
-    background: #052894; !important
+    background: #052894 !important; 
 }
