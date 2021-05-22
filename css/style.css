@@ -533,7 +533,7 @@ a[href^=tel] {
 .btn-primary:hover,
 .btn-dark:hover,
 .btn-white.btn-primary:hover {
-  background: #111;
+  background: #052894;
   color: #fff;
 }
 
@@ -1264,7 +1264,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .slide-title-box {
   font-size: 16px;
   line-height: 39px;
-  background: #ff7f27;
+  background: #052894;
   color: #fff;
   display: inline-block;
   padding: 0 15px;
