@@ -1435,7 +1435,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   height: 60px;
   font-size: 22px;
   border-radius: 0;
-  transition: all 500ms ease;
+  transition: all 1000ms ease;
 }
 
 .banner-carousel .carousel-control i:hover {
