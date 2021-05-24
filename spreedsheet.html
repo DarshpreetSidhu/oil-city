@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <div>
+    <form name="demo-oil-city-contact">
+      <div>
+        <label>Enter your First Name :</label>
+        <input type="text" name="First Name" placeholder="Enter your first name"/>
+      </div>
+      <div>
+        <label>Enter your Last Name :</label>
+        <input type="text" name="Last Name" placeholder="Enter your last name"/>
+      </div>
+      <div>
+        <label>Enter your Email Id :</label>
+        <input type="text" name="Email Id" placeholder="Enter your email Id"/>
+      </div>
+      <div>
+        <label>Enter your Message :</label>
+        <textarea type="text" name="Message" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit">Submit Form</button>
+    </form>
+  </div>
+
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBBRYQVFaMYMknrYRy9M3wG93EKKhYhtHglzeZ8qGhPJr26f6bkyY_NUCvl-f9XbYr/exec';
+    const form = document.forms['demo-oil-city-contact']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ 
+          alert('Form has been submitted successfully!')
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    /*var sheetName = 'Sheet1'
+    var scriptProp = PropertiesService.getScriptProperties()
+
+    function intialSetup () {
+      var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+      scriptProp.setProperty('key', activeSpreadsheet.getId())
+    }
+
+    function doPost (e) {
+      var lock = LockService.getScriptLock()
+      lock.tryLock(10000)
+
+      try {
+        var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+        var sheet = doc.getSheetByName(sheetName)
+
+        var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+        var nextRow = sheet.getLastRow() + 1
+
+        var newRow = headers.map(function(header) {
+          return header === 'timestamp' ? new Date() : e.parameter[header]
+        })
+
+        sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+          .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      catch (e) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+          .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      finally {
+        lock.releaseLock()
+      }
+    }*/
+  </script>
+</body>
+
+</html>
