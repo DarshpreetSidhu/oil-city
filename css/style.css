@@ -3501,3 +3501,10 @@ label {
 /*# sourceMappingURL=style.css.map */
 
 /* CUSTOM STYLE */
+.slide-title-box{
+  background: #052894;
+}
+
+.btn-primary {
+  background:#f3801f;
+}
