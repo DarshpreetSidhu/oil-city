@@ -1241,6 +1241,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   color: #fff;
   background-position: 50% 50%;
   background-size: cover;
+
 }
 
 @media (max-width: 991px) {
