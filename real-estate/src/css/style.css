@@ -994,3 +994,7 @@ a {
 .site-background{
   height: 45vh;
 }
+
+.active-tab{
+  color : white !important;
+}

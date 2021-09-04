@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Home from './pages/home';
 import Buy from './pages/buy';
 import Rent from './pages/rent';
-import Property from './pages/property';
+import PropertyInfo from './pages/property-info';
 import About from './pages/about';
 import Contact from './pages/contact';
 
@@ -25,7 +25,7 @@ class App extends Component {
           <Route path="/" exact component={Home}></Route>
           <Route path="/buy" component={Buy}></Route>
           <Route path="/rent" component={Rent}></Route>
-          <Route path="/property" component={Property}></Route>
+          <Route path="/property" component={PropertyInfo}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/contact" component={Contact}></Route>
         </Switch>
