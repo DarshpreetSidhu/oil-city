@@ -7,6 +7,10 @@ import Rent from './pages/rent';
 import PropertyInfo from './pages/property-info';
 import About from './pages/about';
 import Contact from './pages/contact';
+import Login from './pages/login';
+import ForgetPassword from './pages/forget-password';
+import Register from './pages/register';
+import Dashboard from './pages/admin/dashboard';
 
 import './css/bootstrap.min.css';
 import './css/magnific-popup.css';
@@ -15,6 +19,7 @@ import './css/animate.css';
 import './css/fl-bigmug-line.css';
 import './css/aos.css';
 import './css/style.css';
+import './fonts/icomoon/style.css';
 
 
 class App extends Component {
@@ -28,6 +33,10 @@ class App extends Component {
           <Route path="/property" component={PropertyInfo}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/register" component={Register}></Route>
+          <Route path="/reset" component={ForgetPassword}></Route>
+          <Route path="/admin" component={Dashboard}></Route>
         </Switch>
       </BrowserRouter>
     );

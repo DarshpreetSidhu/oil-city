@@ -998,3 +998,132 @@ a {
 .active-tab{
   color : white !important;
 }
+.active-mobile-tab{
+  color : rgb(45, 0, 245) !important;
+}
+
+.site-menu-toggle{
+  cursor: pointer;
+}
+
+.overlay{
+  background: linear-gradient(
+    0deg, rgb(103 103 103 / 61%), rgb(83 83 83 / 65%)), url('../images/hero_bg_3.jpg');
+}
+
+.login-background{
+  background: linear-gradient(
+    0deg, rgb(47 47 47 / 61%), rgb(0 0 0 / 65%)), url('../images/hero_bg_2.jpg'); 
+    height: 100vh;
+    background-size: cover;
+}
+
+.m-top-5{
+  margin-top: 5%;
+}
+
+.form-width{
+  width: 65%;
+}
+
+.align-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.btn-register{
+  background-color: #607d8b;
+    border-color: #31424a;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.btn-register:hover{
+  background-color: #273c46;
+}
+
+.forget-link{
+  color: #ffffffd1;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.forget-link:hover{
+  color: #ffffffd1;
+  text-decoration: underline;
+}
+
+.m-top-forget{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.container-admin{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-admin{
+  height: 10vh;
+  background-color: #364e68;
+}
+
+.wrapper-admin{
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar-admin{
+  width: 20%;
+  background-color: #e6e6e6;;
+  border-right-color: black;
+}
+
+.content-admin{
+  width: 80%;
+  overflow: auto;
+}
+
+.admin-tab-active{
+  background-color: #273c46;
+}
+
+#add-property label{
+  color: #1a3373;
+  font-size: 14px;
+}
+
+#add-property{
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15vh;
+}
+
+#add-property input{
+  font-size: 14px;
+  height: 38px;
+  margin-bottom: 12px;
+}
+
+#add-property textarea{
+  font-size: 14px;
+  height: 74px;
+  margin-bottom: 12px;
+}
+
+#add-property select{
+  font-size: 14px;
+  height: 38px;
+  margin-bottom: 12px;
+}
+
+.add-property-title{
+  color: #1a3373;
+  margin-top: 15px;
+  margin-left: 12px;
+}
